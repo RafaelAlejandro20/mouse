@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(100,100,100);
+            margin: 0px;
+            padding: 0px;
+        }
+        .contenedor-principal{
+            width: 300px;
+            height: 400px;
+            background: rgb(255,255,255);
+            border-radius: 10px;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 20px 20px rgba(0,0,0,0.20);
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgb(40,40,40);
+        }
+        input{
+            margin: 10px;
+        }
+        .boton{
+            width: 280px;
+            height: 40px;
+            border-radius: 20px;
+            background: rgb(19, 118, 255);
+            color: rgb(255,255,255);
+            border: hidden;
+        }
+        .archivo{
+            border: hidden;
+        }
+    </style>
+</head>
+<body>
+    <section class="contenedor-principal">
+        <h1>Mouse</h1>
+        <h4>Seccion uno (Imagen)</h4>
+        <form enctype="multipart/form-data" action="verificacion.php" method="POST">
+            <input name="fichero_usuario" type="file" class="archivo"/><br>
+            <input type="submit" value="Enviar fichero" class="boton"/>
+            <input type="hidden" value="Seccion_uno" name="base"/>
+            <input type="hidden" value="Seccion_1" name="id"/>
+        </form>
+        <h4>Sección dos (Imagen)</h4>
+        <form enctype="multipart/form-data" action="verificacion.php" method="POST">
+            <input name="fichero_usuario" type="file" class="archivo"/><br>
+            <input type="submit" value="Enviar fichero" class="boton"/>
+            <input type="hidden" value="Seccion_dos" name="base"/>
+            <input type="hidden" value="Seccion_2" name="id"/>
+        </form>
+        <h4>Sección tres (Video)</h4>
+        <form enctype="multipart/form-data" action="verificacion.php" method="POST">
+            <input name="fichero_usuario" type="file" class="archivo"/><br>
+            <input type="submit" value="Enviar fichero" class="boton"/>
+            <input type="hidden" value="Videos" name="base"/>
+            <input type="hidden" value="video" name="id"/>
+        </form>
+    </section>
+</body>
+</html>
