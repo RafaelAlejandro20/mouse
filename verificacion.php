@@ -9,12 +9,12 @@ $fichero_subido = $dir_subida . basename($_FILES['fichero_usuario']['name']);
     import { getFirestore, doc, setDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
     const firebaseConfig = {
-        apiKey: "AIzaSyBfiw-MY5ZfXxzBsx2vomazX4LfbAXqVpc",
-        authDomain: "mosue-3f4e5.firebaseapp.com",
-        projectId: "mosue-3f4e5",
-        storageBucket: "mosue-3f4e5.appspot.com",
-        messagingSenderId: "264425567241",
-        appId: "1:264425567241:web:44d858d05e966d5459f4d8"
+        apiKey: "",
+        authDomain: "",
+        projectId: "",
+        storageBucket: "",
+        messagingSenderId: "",
+        appId: ""
     };
 
     const app = initializeApp(firebaseConfig);
